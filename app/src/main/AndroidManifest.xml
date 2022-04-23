@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReAvixMobileApp">
         <activity
+            android:name=".MainPageApp"
+            android:exported="false" />
+        <activity
+            android:name=".sign_up_up3nd"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp2ndClass"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".SignInandSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SliderPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

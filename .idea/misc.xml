@@ -3,7 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.274" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable-v24/ic_password_icon.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable-v24/ic_vector.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable-v24/ic_vector1.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/black_border.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_background_view_signinpage.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_icon_right.xml" value="0.129" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.274" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_mail_icon.xml" value="0.129" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_password_icon_pagesignup.xml" value="0.257" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_pen_inputtext.xml" value="0.2935" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_reavix_txt.xml" value="0.274" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/drawable/ic_txt_bottom.xml" value="0.274" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/font/muli_black_italic.xml" value="0.36018518518518516" />
         <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_main_page_app.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_sign_inand_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_sign_up2nd_class.xml" value="0.12962962962962962" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_sign_up_up3nd.xml" value="0.25" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/activity_slider_page.xml" value="0.33" />
+        <entry key="..\:/Users/dserd/AndroidStudioProjects/ReAvixMobileApp/app/src/main/res/layout/slider_layout.xml" value="0.2206896551724138" />
       </map>
     </option>
   </component>

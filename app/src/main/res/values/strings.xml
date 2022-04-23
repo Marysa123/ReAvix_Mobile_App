@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ReAvix Mobile App</string>
+
+
+    <string name="heading_one">Создавайте и развивайте лояльность клиентов</string>
+    <string name="heading_two">Повысьте доступность</string>
+    <string name="heading_three">Помогает создать базу данных потенциальных и действующих клиентов</string>
+    <string name="heading_fourth">Быстрота и удобство использования</string>
+
+
+    <string name="title_sign_in_and_sign_up_text">We will help you to grow your business using online services!</string>
+    <string name="title_text">Grow\nYour Business</string>
+
+    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
+    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+
+
 </resources>

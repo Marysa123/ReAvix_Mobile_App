@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/splashscreen_background"
@@ -18,7 +18,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/logo_img"
         android:layout_width="184dp"
         android:layout_height="99dp"
         android:layout_marginTop="232dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/logo_img"
         app:layout_constraintVertical_bias="0.768"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
