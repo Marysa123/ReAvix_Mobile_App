@@ -73,8 +73,6 @@ public class sign_up_up3nd extends AppCompatActivity {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(sign_up_up3nd.this,pairs);
-            startActivity(intent,options.toBundle());
-
             if (Fio.equals("") || Login.equals("") || Mail.equals("") || Password.equals("")|| Pol.equals("")|| Datetime.equals("") || Phone.equals("") || Adress_user.equals("")){
                 Toast.makeText(sign_up_up3nd.this,"Пожалуйста, заполните данные",Toast.LENGTH_SHORT).show();
             }
@@ -85,6 +83,8 @@ public class sign_up_up3nd extends AppCompatActivity {
                     Boolean regResult = myDB.insertData(Fio,Login,Mail,Password,Pol,Datetime,"Российская Федерация",Phone,Adress_user);
                     if (regResult == true){
                         Toast.makeText(sign_up_up3nd.this, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent(sign_up_up3nd.this,SignIn.class);
+                        startActivity(intent1);
                     }
                     else{
                         Toast.makeText(sign_up_up3nd.this, "Ошибка", Toast.LENGTH_SHORT).show();
@@ -92,11 +92,12 @@ public class sign_up_up3nd extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(sign_up_up3nd.this,"Такой пользователь уже существует \n Пожалуйста войдите",Toast.LENGTH_SHORT).show();
+                    Intent intent1 = new Intent(sign_up_up3nd.this,SignUp.class);
+                    startActivity(intent1);
                 }
             }
         }
         else{
-            startActivity(intent);
         }
 
     }

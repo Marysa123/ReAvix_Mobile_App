@@ -91,10 +91,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Войти"
+                android:onClick="onClickbtnSign"
                 android:background="@color/black"
                 android:textColor="@color/white"
                 android:layout_marginTop="20dp"
-                android:foreground="?android:attr/selectableItemBackground"/>
+                android:foreground="?android:attr/selectableItemBackground"
+                tools:ignore="OnClick" />
 
             <Button
                 android:onClick="onClickbtnCreateAcc"
