@@ -36,7 +36,6 @@
             android:orientation="vertical"
             android:layout_marginTop="80dp">
 
-
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -56,10 +55,6 @@
                     android:fontFamily="@font/muli"
                     android:textColor="@color/black"
                     android:inputType="text">
-
-
-
-
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +65,7 @@
                 app:hintTextColor="@color/black"
                 app:boxStrokeColor="@color/black"
                 app:boxStrokeWidth="2dp"
-                app:startIconDrawable="@drawable/ic_password_icon"
+                app:startIconDrawable="@drawable/ic_password_icon_pagesignup"
                 app:startIconTint="@color/black"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/black">
@@ -82,10 +77,6 @@
                     android:fontFamily="@font/muli"
                     android:textColor="@color/black"
                     android:inputType="textPassword">
-
-
-
-
                 </com.google.android.material.textfield.TextInputEditText>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,20 +84,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp">
-
-                <CheckBox
-                    style="@style/Widget.AppCompat.CompoundButton.CheckBox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:buttonTint="@color/black"
-                    android:text="Запомнить меня"
-                    android:textColor="@color/black" />
-
-
-
-
-
             </RelativeLayout>
 
             <Button
