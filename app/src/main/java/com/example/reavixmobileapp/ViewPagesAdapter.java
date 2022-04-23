@@ -4,22 +4,24 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
+
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class ViewPagesAdapter extends PagerAdapter {
 
     Context context;
 
     int[] images = {
-            R.drawable.image1,
-            R.drawable.image2,
-            R.drawable.image3,
-            R.drawable.image4
+            R.raw.friends,
+            R.raw.file,
+            R.raw.advice,
+            R.raw.graphic
     };
 
     int headerText[] = {
@@ -57,11 +59,11 @@ public class ViewPagesAdapter extends PagerAdapter {
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate((R.layout.slider_layout),container,false);
 
-        ImageView sliderimagestitle = (ImageView) view.findViewById(R.id.titleImage);
+        LottieAnimationView sliderimagestitle = (LottieAnimationView) view.findViewById(R.id.titleImage);
         TextView sliderheading = (TextView) view.findViewById(R.id.texttitle);
         TextView sliderDescption = (TextView) view.findViewById(R.id.texttitle2);
 
-        sliderimagestitle.setImageResource(images[position]);
+        sliderimagestitle.setAnimation(images[position]);
         sliderheading.setText(headerText[position]);
         sliderDescption.setText(headerTextBottom[position]);
 

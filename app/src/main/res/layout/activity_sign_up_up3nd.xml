@@ -27,7 +27,7 @@
             android:id="@+id/signip_title_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Account"
+            android:text="Создать \nАккаунт"
             android:transitionName="transition_title_text"
             android:textColor="@color/black"
             android:textSize="40sp"
@@ -42,18 +42,19 @@
             android:layout_marginTop="40dp">
 
             <com.hbb20.CountryCodePicker
+                android:id="@+id/Country_picker"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/black_border"
                 app:ccp_autoDetectCountry="true"
                 app:ccp_showFlag="true"
-                app:ccp_showNameCode="true"
                 app:ccp_showFullName="true"
-                android:background="@drawable/black_border"/>
+                app:ccp_showNameCode="true" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone Number"
+                android:hint="Номер телефона"
                 app:startIconDrawable="@drawable/ic_phone_icon"
                 app:startIconTint="@color/black"
                 app:hintTextColor="@color/black"
@@ -63,15 +64,32 @@
                 app:boxStrokeWidthFocused="2dp"
                 app:boxStrokeColor="@color/black">
 
-
-
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Number_phone"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="phone"/>
             </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Введите ваш адрес"
+                app:startIconDrawable="@drawable/ic_location_pin_place_map_address_placeholder_icon_149107"
+                app:startIconTint="@color/black"
+                app:hintTextColor="@color/black"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/black"
+                android:textColorHint="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/black">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adress_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <Button
@@ -83,7 +101,7 @@
             android:elevation="5dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:onClick="callNextSignupScreen"
-            android:text="NEXT"
+            android:text="Регистрация"
             android:textColor="@color/white"
             android:transitionName="transition_next_btn"
             tools:ignore="OnClick" />
@@ -92,7 +110,7 @@
             android:id="@+id/signip_login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LOGIN"
+            android:text="войти"
 
             android:background="#00000000"
             android:textColor="@color/black"

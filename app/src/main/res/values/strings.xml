@@ -1,20 +1,19 @@
 <resources>
-    <string name="app_name">ReAvix Mobile App</string>
-
+    <string name="app_name">ReAvix</string>
 
     <string name="heading_one">Создавайте и развивайте лояльность клиентов</string>
-    <string name="heading_two">Повысьте доступность</string>
-    <string name="heading_three">Помогает создать базу данных потенциальных и действующих клиентов</string>
+    <string name="heading_two">Повысьте доступность работы с информацией</string>
+    <string name="heading_three">Единая база данных для хранения нужной вам информации</string>
     <string name="heading_fourth">Быстрота и удобство использования</string>
 
 
-    <string name="title_sign_in_and_sign_up_text">We will help you to grow your business using online services!</string>
-    <string name="title_text">Grow\nYour Business</string>
+    <string name="title_sign_in_and_sign_up_text">Мы поможем вам работать эффективно с помощью наших возможностей!</string>
+    <string name="title_text">Развивайте \n ваши преспективы</string>
 
-    <string name="desc_one">Grow your Business By Accepting Card Payments with The New Card Reader</string>
-    <string name="desc_two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
-    <string name="desc_three">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
-    <string name="desc_fourth">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <string name="desc_one">Работа нашего приложения поможет вам добиться расположения ваших клиентов</string>
+    <string name="desc_two">Благодаря инструментам нашей программы, ваша работа с данными стала куда проще!</string>
+    <string name="desc_three">Вся вносимая вами информация хранится на едином, надежном сервере</string>
+    <string name="desc_fourth">Обеспечение пользователю эффективное выполнение задач, получая при этом удовольствие от работы</string>
 
 
 </resources>
