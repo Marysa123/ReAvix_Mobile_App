@@ -27,7 +27,6 @@ public class sign_up_up3nd extends AppCompatActivity {
     
     DBHelper myDB;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +39,6 @@ public class sign_up_up3nd extends AppCompatActivity {
         
         nomer_txt = findViewById(R.id.Number_phone);
         adress_txt = findViewById(R.id.Adress_user);
-
 
         Bundle bundle = getIntent().getExtras(); //Вот тут получение с 2 окна регистрации
         if (bundle != null){
@@ -55,8 +53,6 @@ public class sign_up_up3nd extends AppCompatActivity {
 
 
     }
-
-
     public void callNextSignupScreen(View view){
 
         Intent intent = new Intent(getApplicationContext(),MainPageApp.class);
@@ -99,5 +95,8 @@ public class sign_up_up3nd extends AppCompatActivity {
         }
         else{
         }
+    }
+    public void onCLickbtnSignUp(View view){
+        startActivity(new Intent(getApplicationContext(),SignIn.class));
     }
 }

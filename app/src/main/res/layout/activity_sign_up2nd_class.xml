@@ -109,6 +109,7 @@
             tools:ignore="OnClick" />
 
         <Button
+            android:onClick="onCLickbtnSignUp"
             android:id="@+id/signip_login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -119,7 +120,8 @@
             android:fontFamily="@font/muli"
             android:elevation="5dp"
             android:transitionName="transition_login_btn"
-            android:foreground="?android:attr/selectableItemBackground"/>
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="OnClick" />
 
 
     </LinearLayout>

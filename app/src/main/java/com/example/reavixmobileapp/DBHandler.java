@@ -44,7 +44,6 @@ public class DBHandler extends SQLiteOpenHelper {
         values.put(Student.UserDetails.COL_PERSONADATA,personaldata);
         values.put(Student.UserDetails.COL_XARACTERISTIKA,xaracteristika);
 
-
         long sid = database.insert(Student.UserDetails.TABLE_NAME,null,values);
 
         if (sid>0){
@@ -72,7 +71,6 @@ public class DBHandler extends SQLiteOpenHelper {
         cv.put(Student.UserDetails.COL_PERSONADATA,personaldata);
         cv.put(Student.UserDetails.COL_XARACTERISTIKA,xaracteristika);
 
-
         long result = db.update(Student.UserDetails.TABLE_NAME,cv,"id=?",new String[]{row_id});
 
         if (result==-1){
@@ -87,10 +85,7 @@ public class DBHandler extends SQLiteOpenHelper {
         Cursor cursor = database.rawQuery(query,null);
 
         return cursor;
-
     }
-
-
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("drop Table if exists student");

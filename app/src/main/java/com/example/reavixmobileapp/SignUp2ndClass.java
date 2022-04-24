@@ -96,5 +96,10 @@ public class SignUp2ndClass extends AppCompatActivity {
             startActivity(intent);
         }
 
+
+    }
+
+    public void onCLickbtnSignUp(View view){
+        startActivity(new Intent(getApplicationContext(),SignIn.class));
     }
 }
