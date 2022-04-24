@@ -5,50 +5,83 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainPageApp2"
-    android:background="@drawable/background_mainpage2">
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/muli_light"
+        android:text="Добро пожаловать Дмитрий!"
+        android:layout_marginTop="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="204dp"
         android:layout_height="30dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/muli_bold"
         android:text=":gfgfgfgf"
+        android:visibility="invisible"
         android:textAlignment="textStart"
-        android:layout_marginTop="40dp"
-
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/black"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+
+        <com.github.mikephil.charting.charts.RadarChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radarchart"/>
+
+    </LinearLayout>
+
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="470dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="420dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclesview"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </RelativeLayout>
-        </ScrollView>
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclesview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp" />
+            </RelativeLayout>
+
     </ScrollView>
 
 
