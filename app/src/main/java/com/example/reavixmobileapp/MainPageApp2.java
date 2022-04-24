@@ -29,8 +29,6 @@ public class MainPageApp2 extends AppCompatActivity {
 
     TextView txt_id;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
