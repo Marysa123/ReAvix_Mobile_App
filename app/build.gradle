@@ -44,5 +44,7 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.4.0'
     implementation 'androidx.core:core:1.7.0'
     implementation 'com.hbb20:ccp:2.5.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
 
 }

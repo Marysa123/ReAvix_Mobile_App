@@ -83,7 +83,7 @@ public class sign_up_up3nd extends AppCompatActivity {
                     Boolean regResult = myDB.insertData(Fio,Login,Mail,Password,Pol,Datetime,"Российская Федерация",Phone,Adress_user);
                     if (regResult == true){
                         Toast.makeText(sign_up_up3nd.this, "Регистрация прошла успешно", Toast.LENGTH_SHORT).show();
-                        Intent intent1 = new Intent(sign_up_up3nd.this,SignIn.class);
+                        Intent intent1 = new Intent(sign_up_up3nd.this,MainPageApp.class);
                         startActivity(intent1);
                     }
                     else{
@@ -99,6 +99,5 @@ public class sign_up_up3nd extends AppCompatActivity {
         }
         else{
         }
-
     }
 }

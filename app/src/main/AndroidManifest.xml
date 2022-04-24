@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ReAvixMobileApp">
         <activity
+            android:name=".UpdataPages"
+            android:exported="false" />
+        <activity
+            android:name=".MainPageApp2"
+            android:exported="false" />
+        <activity
             android:name=".MainPageApp"
             android:exported="false" />
         <activity

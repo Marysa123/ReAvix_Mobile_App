@@ -39,13 +39,13 @@ public class SignIn extends AppCompatActivity {
         else{
             Boolean result = myDB.checkusernamePassword(user,pass);
             if (result==true){
-                Intent intent = new Intent(getApplicationContext(),MainPageApp.class);
+                Intent intent = new Intent(getApplicationContext(),MainPageApp2.class);
                 startActivity(intent);
             }
-            else{
-                Toast.makeText(SignIn.this, "Успешный вход", Toast.LENGTH_SHORT).show();
+            else
+                Toast.makeText(SignIn.this, "Повторите попытку", Toast.LENGTH_SHORT).show();
+
             }
 
         }
     }
-}

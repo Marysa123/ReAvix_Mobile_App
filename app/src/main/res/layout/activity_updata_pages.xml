@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainPageApp"
+    tools:context=".UpdataPages"
     android:background="@drawable/img">
 
     <TextView
@@ -26,7 +26,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -50,17 +49,17 @@
                 android:layout_width="204dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="36dp"
-                android:layout_marginTop="15dp"
                 android:fontFamily="@font/muli_bold"
-                android:text="Номер группы:"
+                android:text="Ваш Id:"
                 android:textAlignment="textStart"
+                android:layout_marginTop="15dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Nomer_gruppi"
+                android:id="@+id/Nomer_gruppi_update"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="36dp"
@@ -84,11 +83,11 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Nomer_gruppi" />
+                app:layout_constraintTop_toBottomOf="@+id/Nomer_gruppi_update" />
 
             <com.google.android.material.textfield.TextInputEditText
 
-                android:id="@+id/Biografia"
+                android:id="@+id/Biografia_update"
                 android:layout_width="320dp"
                 android:layout_height="120dp"
                 android:layout_marginTop="20dp"
@@ -113,14 +112,14 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Biografia" />
+                app:layout_constraintTop_toBottomOf="@+id/Biografia_update" />
 
             <com.google.android.material.textfield.TextInputEditText
 
-                android:id="@+id/personal_data"
+                android:id="@+id/personal_data_update"
+                android:layout_marginTop="20dp"
                 android:layout_width="300dp"
                 android:layout_height="140dp"
-                android:layout_marginTop="20dp"
                 android:fontFamily="@font/muli"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
@@ -142,11 +141,11 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/personal_data" />
+                app:layout_constraintTop_toBottomOf="@+id/personal_data_update" />
 
             <com.google.android.material.textfield.TextInputEditText
 
-                android:id="@+id/Xaracter"
+                android:id="@+id/Xaracter_update"
                 android:layout_width="300dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
@@ -159,18 +158,19 @@
 
             </com.google.android.material.textfield.TextInputEditText>
 
+
             <Button
-                android:id="@+id/button_addinfo"
+                android:id="@+id/updateBtn"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="35dp"
                 android:background="@drawable/gradient_button"
                 android:foreground="?android:attr/selectableItemBackground"
-                android:text="Закончить"
+                android:text="Редактировать"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Xaracter" />
+                app:layout_constraintTop_toBottomOf="@+id/Xaracter_update" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
