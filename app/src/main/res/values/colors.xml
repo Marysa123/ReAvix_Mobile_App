@@ -13,4 +13,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="colorMenuPurple">#673A87</color>
+    <color name="colorMenuPurpleDark">#512DAB</color>
+    <color name="colorPink">#FF5252</color>
+    <color name="colorText">#212121</color>
+    <color name="colorGreen">#32CD32</color>
+
 </resources>
