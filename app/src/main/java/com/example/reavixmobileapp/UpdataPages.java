@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -27,8 +28,6 @@ public class UpdataPages extends AppCompatActivity {
         Personal_data = findViewById(R.id.personal_data_update);
         Xaracteristika = findViewById(R.id.Xaracter_update);
         btnUpdate = findViewById(R.id.updateBtn);
-
-        String id = "";
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("Range")
