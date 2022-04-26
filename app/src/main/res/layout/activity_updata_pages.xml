@@ -21,12 +21,11 @@
             android:layout_height="match_parent">
 
             <View
-                android:layout_width="340dp"
-                android:layout_marginEnd="15dp"
-                android:layout_height="1dp"
-                android:layout_marginStart="40dp"
+                android:layout_width="320dp"
+                android:layout_height="2dp"
                 android:background="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             <TextView
@@ -90,11 +89,11 @@
                 android:id="@+id/Biografia_update"
                 android:layout_width="320dp"
                 android:layout_height="150dp"
-                android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/muli"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3">
 
@@ -115,13 +114,13 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/personal_data_update"
-                android:layout_marginTop="20dp"
                 android:layout_width="320dp"
                 android:layout_height="150dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/muli"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
-                android:layout_marginStart="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4">
 
@@ -142,13 +141,13 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Xaracter_update"
-                android:layout_width="300dp"
+                android:layout_width="320dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/muli"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
-                android:layout_marginStart="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5">
 

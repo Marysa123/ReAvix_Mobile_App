@@ -54,6 +54,14 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
         }
     }
+    public Cursor viewData(){
+        SQLiteDatabase database = this.getReadableDatabase();
+        String query = "SELECT mail FROM users ORDER BY id DESC LIMIT 1";
+        Cursor cursor = database.rawQuery(query,null);
+
+        return cursor;
+    }
+
     public  Boolean checkusernamePassword(String login,String password){
         SQLiteDatabase myDB = this.getWritableDatabase();
         Cursor cursor = myDB.rawQuery("select * from users where login = ? and password = ?",new String[] {login,password});

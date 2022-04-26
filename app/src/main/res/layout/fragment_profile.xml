@@ -5,7 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ProfileFragment">
 
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Id_titl"
+        android:text="fdf"
+        />
+
     <ScrollView
+        android:layout_marginTop="200dp"
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

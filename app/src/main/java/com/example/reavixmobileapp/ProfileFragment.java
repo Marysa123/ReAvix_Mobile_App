@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.RadarChart;
 import com.github.mikephil.charting.components.XAxis;
@@ -27,7 +29,9 @@ public class ProfileFragment extends Fragment {
     RecyclerView recyclerView;
     ArrayList<String> name_grupp,biografia,personal_data,xaracteristika;
     DBHandler dbHandler;
+    DBHelper dbHelper;
     MyAdapter adapter;
+    TextView textView;
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -59,7 +63,6 @@ public class ProfileFragment extends Fragment {
     private void displaydata() {
         Cursor cursor = dbHandler.getdata();
         if (cursor.getCount() == 0 && cursor.moveToFirst()) {
-
         } else {
             if (cursor != null)
                 if (cursor.moveToFirst()) {
@@ -90,6 +93,20 @@ public class ProfileFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
         displaydata();
+
+        textView = view.findViewById(R.id.Id_titl);
+        dbHelper = new DBHelper((requireContext()));
+
+        Cursor cursor = dbHelper.viewData();
+        if (cursor.getCount()==0){
+            Toast.makeText(requireContext(), "Нет данных", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            while(cursor.moveToNext()){
+                textView.setText(cursor.getString(0));
+            }
+        }
+
         return  view;
     }
 }
