@@ -7,9 +7,6 @@
     <item android:id="@+id/menuStatic"
         android:icon="@drawable/ic_iconstatic"
         android:title="Личная статистика" />
-    <item android:id="@+id/menuInfo"
-        android:icon="@drawable/ic_icon_addinfo"
-        android:title="Добавить информацию" />
 
 
 
