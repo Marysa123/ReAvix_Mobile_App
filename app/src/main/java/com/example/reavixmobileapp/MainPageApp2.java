@@ -47,6 +47,5 @@ public class MainPageApp2 extends AppCompatActivity {
 
         NavController navController = Navigation.findNavController(this,R.id.navHostFrafment);
         NavigationUI.setupWithNavController(navigationView,navController);
-
     }
 }

@@ -6,20 +6,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".StatisticsFragment">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="400dp"
-        android:layout_height="380dp"
-        android:layout_marginTop="90dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <com.github.mikephil.charting.charts.RadarChart
-            android:id="@+id/radarchart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textView"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_marginTop="20dp"
+           android:text="Статистика успеваемости за учебный год"
+           app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <LinearLayout
+           android:id="@+id/linearLayout"
+           android:layout_width="match_parent"
+           android:layout_height="880dp"
+           android:layout_marginTop="50dp"
+           android:orientation="vertical"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <com.github.mikephil.charting.charts.RadarChart
+               android:id="@+id/radarchart"
+               android:layout_width="match_parent"
+               android:layout_height="400dp"/>
+           <com.anychart.AnyChartView
+               android:id="@+id/anychartview"
+               android:layout_width="match_parent"
+               android:layout_height="400dp"
+               android:layout_marginTop="10dp"/>
+       </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </FrameLayout>

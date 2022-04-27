@@ -31,7 +31,7 @@ public class ProfileFragment extends Fragment {
     DBHandler dbHandler;
     DBHelper dbHelper;
     MyAdapter adapter;
-    TextView textView;
+    TextView txtEmail,txtFio;
 
 
     private static final String ARG_PARAM1 = "param1";
@@ -94,16 +94,29 @@ public class ProfileFragment extends Fragment {
 
         displaydata();
 
-        textView = view.findViewById(R.id.Id_titl);
+        txtEmail = view.findViewById(R.id.Email_title);
+        txtFio = view.findViewById(R.id.Fio_title);
+
+
         dbHelper = new DBHelper((requireContext()));
 
-        Cursor cursor = dbHelper.viewData();
+        Cursor cursor = dbHelper.viewDataEmail();
         if (cursor.getCount()==0){
             Toast.makeText(requireContext(), "Нет данных", Toast.LENGTH_SHORT).show();
         }
         else{
             while(cursor.moveToNext()){
-                textView.setText(cursor.getString(0));
+                txtEmail.setText(cursor.getString(0));
+            }
+        }
+        Cursor cursor2 = dbHelper.viewDataFio();
+        if (cursor2.getCount()==0){
+            Toast.makeText(requireContext(), "Нет данных", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            while(cursor2.moveToNext()){
+                txtFio.setText(cursor2.getString(0));
+
             }
         }
 

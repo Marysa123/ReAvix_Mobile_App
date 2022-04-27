@@ -54,9 +54,16 @@ public class DBHelper extends SQLiteOpenHelper {
             return false;
         }
     }
-    public Cursor viewData(){
+    public Cursor viewDataEmail(){
         SQLiteDatabase database = this.getReadableDatabase();
         String query = "SELECT mail FROM users ORDER BY id DESC LIMIT 1";
+        Cursor cursor = database.rawQuery(query,null);
+
+        return cursor;
+    }
+    public Cursor viewDataFio(){
+        SQLiteDatabase database = this.getReadableDatabase();
+        String query = "SELECT fio FROM users ORDER BY id DESC LIMIT 1";
         Cursor cursor = database.rawQuery(query,null);
 
         return cursor;

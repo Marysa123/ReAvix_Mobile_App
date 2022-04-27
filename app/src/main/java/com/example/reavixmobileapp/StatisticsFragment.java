@@ -9,6 +9,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.anychart.AnyChart;
+import com.anychart.AnyChartView;
+import com.anychart.chart.common.dataentry.DataEntry;
+import com.anychart.chart.common.dataentry.ValueDataEntry;
+import com.anychart.chart.common.listener.ListenersInterface;
+import com.anychart.charts.Pie;
 import com.github.mikephil.charting.charts.RadarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.RadarData;
@@ -17,6 +23,7 @@ import com.github.mikephil.charting.data.RadarEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,6 +62,9 @@ public class StatisticsFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+    String[] levels = {"Январь","Февраль","Март","Апрель","Май","Июнь","Сентябрь","Октябрь","Ноябрь","Декабрь"};
+    AnyChartView anyChartView;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,6 +74,7 @@ public class StatisticsFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+    int[] number = {10,10,10,2};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -93,13 +104,30 @@ public class StatisticsFragment extends Fragment {
         RadarData radarDataSet1 = new RadarData();
         radarDataSet1.addDataSet(radarDataSet);
 
-        String[] levels = {"Январь","Февраль","Март","Апрель","Май","Июнь","Сентябрь","Октябрь","Ноябрь","Декабрь"};
         XAxis xAxis = radarChart.getXAxis();
         xAxis.setValueFormatter(new IndexAxisValueFormatter(levels));
 
         radarChart.getDescription().setText("");
         radarChart.setData(radarDataSet1);
-        return view;
 
+        anyChartView = view.findViewById(R.id.anychartview);
+        setupChartVew();
+
+        return view;
+    }
+
+    private void setupChartVew() {
+
+        String[] text = {"Отличники","Ударники","Троечники","Неуспевающие"};
+
+        Pie pie = AnyChart.pie();
+        List<DataEntry> dataEntries = new ArrayList<>();
+
+        for (int i = 0;i < text.length;i++){
+            dataEntries.add(new ValueDataEntry(text[i],number[i]));
+        }
+        pie.data(dataEntries);
+        pie.title("Статистика успеваемости студентов за Апрель");
+        anyChartView.setChart(pie);
     }
 }

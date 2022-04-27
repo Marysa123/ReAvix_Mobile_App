@@ -76,7 +76,7 @@ public class DBHandler extends SQLiteOpenHelper {
         if (result==-1){
             Toast.makeText(context, "Failed update", Toast.LENGTH_SHORT).show();
         }else{
-            Toast.makeText(context, "Failed update", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Failed update", Toast.LENGTH_SHORT).show();
         }
     }
     public Cursor viewData(){
